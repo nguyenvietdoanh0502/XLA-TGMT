@@ -1,0 +1,67 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Node / React / Vite
+node_modules/
+dist/
+build/
+.npm/
+.pnpm-store/
+.yarn/
+*.tsbuildinfo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML / training artifacts
+runs/
+wandb/
+mlruns/
+
+# Local datasets and generated outputs
+datasets/
+ai_training/test_results_images/
+ai_training/test_images/
+
+# Model weights / checkpoints
+*.pt
+*.pth
+*.onnx
+*.engine
+!backend/models/*.pt
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
