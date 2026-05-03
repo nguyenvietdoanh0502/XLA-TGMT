@@ -79,24 +79,6 @@ py -3.13 ai_training/test_image.py
 Lưu ý:
 - Nên chạy cùng interpreter Python 3.13 để tránh lệch package.
 
-## 8) Lỗi thường gặp
-1. `ModuleNotFoundError: No module named 'ultralytics'`
-- Nguyên nhân: chạy bằng Python khác môi trường đã cài package.
-- Cách xử lý:
-```bash
-py -3.13 -m pip install -r backend/requirements.txt
-py -3.13 -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
-```
 
-2. Warning `Numpy built with MINGW-W64 ... experimental`
-- Thường do đang chạy Python 3.14 environment.
-- Cách xử lý: chuyển sang Python 3.13 / `.venv` của project.
-
-3. Frontend không gọi được backend (CORS/network)
-- Đảm bảo backend đang chạy ở `http://127.0.0.1:8000`.
-- Kiểm tra URL trong frontend đúng địa chỉ backend.
-
-## 9) Ghi chú vận hành
-- `using_phone` được vẽ khung đỏ để dễ nhận diện.
 
 
